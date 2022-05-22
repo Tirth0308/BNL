@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LEPAKSHI INDIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 5rem">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCOUNTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Tree</a></li>
+                            <li><a class="dropdown-item" href="#">Ledger Groups</a></li>
+                            <li><a class="dropdown-item" href="#">Ledgers</a></li>
+                            <li><a class="dropdown-item" href="#">Entries</a></li>
+                            <li><a class="dropdown-item" href="#">Trial Balance</a></li>
+                            <li><a class="dropdown-item" href="#">Profit and Loss (P & L)</a></li>
+                            <li><a class="dropdown-item" href="#">Income Statement</a></li>
+                            <li><a class="dropdown-item" href="#">Balance Sheet</a></li>
+                            <li><a class="dropdown-item" href="#">FY REPORT</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NEW JOURNAL ENTRY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">DAY BOOK </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">SCHEDULE SMS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            REPORTS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Associate Report</a></li>
+                            <li><a class="dropdown-item" href="#">Branch Report</a></li>
+                            <li><a class="dropdown-item" href="#">Maturity Report</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            DAILY COLLECTION
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Associate Collection Approval</a></li>
+                            <li><a class="dropdown-item" href="#">Associate Collection Report</a></li>
+                            <li><a class="dropdown-item" href="#">Collection Report</a></li>
+                            <li><a class="dropdown-item" href="#">Active Associates</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"> </a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="Search"
+                        style="width: 100px">
+                    <button class="btn btn-outline-success" type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <nav class="sidebar mb-4">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">DASHBOARD</a>
+            </li>
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">COMPANY</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">PROFILE</a></li>
+                    <li><a class="nav-link" href="#">BRANCHES</a></li>
+                    <li><a class="nav-link" href="#">PROMOTERS</a></li>
+                    <li><a class="nav-link" href="#">PROMOTERS SHARE HOLDINGS</a></li>
+                    <li><a class="nav-link" href="#">DIRECTORS</a></li>
+                    <li><a class="nav-link" href="#">UNENCUMBERED DEPOSITS</a></li>
+                    <li><a class="nav-link" href="#">BANK ACCOUNTS</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">USER MANAGEMENT</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">PERMISSIONS / GROUPS</a></li>
+                    <li><a class="nav-link" href="#">USERS</a></li> 
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">COLL.CENTER / GROUPS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">COLLECTION CENTERS</a></li>
+                    <li><a class="nav-link" href="#">GROUPS</a></li>        
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">MEMBER MANAGEMENT</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">MEMBERS</a></li>
+                    <li><a class="nav-link" href="#">MINORS</a></li>
+                    <li><a class="nav-link" href="#">SHARE HOLDINGS</a></li>
+                    <li><a class="nav-link" href="#">SHARE CERTIFICATES</a></li>
+                    <li><a class="nav-link" href="#">SHARE TRANSFER HISTORY</a></li>
+                    <li><a class="nav-link" href="#">FORM 15G / 15H</a></li>     
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">SAVING ACCOUNTS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">FD / MIS ACCOUNTS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">FD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">MIS ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">RD / DD ACCOUNTS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">RD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">DD ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">GOLD LOAN</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">DISBURSEMENTS</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">ORNAMENTS INVENTORY</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">PROP / MORTGAGE LOAN</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">DISBURSEMENTS</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>                   
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-togglek" href="#">LOAN AGAINST DEPOSIT</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">DISBURSEMENTS</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">BUSINESS / OTHER LOAN</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SCHEMES</a></li>
+                    <li><a class="nav-link" href="#">CALCULATOR</a></li>
+                    <li><a class="nav-link" href="#">APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">DISBURSEMENTS</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">FIXED LOAN</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">DISBURSEMENTS</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNTS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">APPROVALS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">ACCOUNTING VOUCHERS</a></li>
+                    <li><a class="nav-link" href="#">LOAN APPLICATIONS</a></li>
+                    <li><a class="nav-link" href="#">SAVING / FD / RD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">PENDING TRANSACTIONS</a></li>
+                    <li><a class="nav-link" href="#">REVERSED TRANSACTIONS</a></li>
+                    <li><a class="nav-link" href="#">NON COMPLIANCES</a></li>
+                    <li><a class="nav-link" href="#">LOAN CLOSURE REQUESTS</a></li>
+                    <li><a class="nav-link" href="#">FD / RD CLOSURE REQUESTS</a></li>
+                    <li><a class="nav-link" href="#">SHARE TRANSFER / ALLOCATION</a></li>
+                    <li><a class="nav-link" href="#">SHARE SURRENDER</a></li>
+                    <li><a class="nav-link" href="#">IMPS TRANSFER APPROVALS</a></li>
+                    <li><a class="nav-link" href="#">WITHIN BANK TRANSFER</a></li>
+                    <li><a class="nav-link" href="#">PRINT REPORT</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">PAYMENTS TO COLLECT</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">PAYMENTS TO RELEASE</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">MACHINE COLLECTION</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">PASSBOOKS</a>
+            </li>
+            
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">PRINT DOCUMENTS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SHARE CERTIFICATE</a></li>
+                    <li><a class="nav-link" href="#">SAVING PASSBOOK</a></li>
+                    <li><a class="nav-link" href="#">FD / MIS BOND</a></li>
+                    <li><a class="nav-link" href="#">FD / MIS PASSBOOK</a></li>
+                    <li><a class="nav-link" href="#">RD / DD BOND</a></li>
+                    <li><a class="nav-link" href="#">RD / DD PASSBOOK</a></li>
+                    <li><a class="nav-link" href="#">RD / DD RECEIPT</a></li>
+                    <li><a class="nav-link" href="#">DD RECEIPT</a></li>
+                    <li><a class="nav-link" href="#">LOAN PASSBOOK</a></li>
+                    <li><a class="nav-link" href="#">TRANSACTION RECEIPT</a></li>
+                    <li><a class="nav-link" href="#">INTEREST CERTIFICATE</a></li>
+                    <li><a class="nav-link" href="#">LETTER HEAD</a></li>
+                    <li><a class="nav-link" href="#">PRINT REPORT</a></li>
+                    <li><a class="nav-link" href="#">PRINT SETTINGS</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">ASSOCIATES / ADVISORS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">RANK STRUCTURE</a></li>
+                    <li><a class="nav-link" href="#">COMMISSION CHARTS</a></li>
+                    <li><a class="nav-link" href="#">ASSOCIATES / ADVISORS</a></li>
+                    <li><a class="nav-link" href="#">COMMISSION PAYOUTS</a></li>
+                    <li><a class="nav-link" href="#">MEMBER INQUIRIES</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">MOBILE / BILL PAYMENT</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SETTINGS</a></li>
+                    <li><a class="nav-link" href="#">RECHARGE HISTORY</a></li>                  
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">WITH-IN BANK TRANSFER</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">BENEFICIARY LIST</a></li>
+                    <li><a class="nav-link" href="#">TRANSFER HISTORY</a></li>                    
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">REPORTS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">PROMOTERS / MEMBERS</a></li>
+                    <li><a class="nav-link" href="#">SHARE HOLDINGS</a></li>
+                    <li><a class="nav-link" href="#">SAVING ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">FD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">MIS ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">RD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">DD ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">GOLD LOAN ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">PROPERTY LOAN ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">DEPOSIT LOAN ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">OTHER LOAN ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">FIXED LOAN ACCOUNTS</a></li>
+                    <li><a class="nav-link" href="#">TRANSACTIONS</a></li>
+                    <li><a class="nav-link" href="#">LOAN EMIs</a></li>
+                    <li><a class="nav-link" href="#">RD / DD INTSALMENTS</a></li>
+                    <li><a class="nav-link" href="#">SHARE TRANSFER HISTORY</a></li>
+                    <li><a class="nav-link" href="#">DOWNLOAD CIBIL REPORT</a></li>
+                    <li><a class="nav-link" href="#">DEPOSIT BALANCE REPORT</a></li>                   
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">HR MANAGEMENT</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">EMPLOYEES</a></li>
+                    <li><a class="nav-link" href="#">SALARY DISBURSEMENT</a></li>                  
+                </ul>
+            </li>
+
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">SOFTWARE SETTINGS</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SMS LIST</a></li>
+                    <li><a class="nav-link" href="#">SMS HISTORY</a></li>
+                    <li><a class="nav-link" href="#">COMMENT HISTORY</a></li>
+                    <li><a class="nav-link" href="#">INTERNET BANKING SETTING</a></li>
+                    <li><a class="nav-link" href="#">ACCOUNT SERIES SETTING</a></li>
+                    <li><a class="nav-link" href="#">LOW BALANCE ALERT</a></li>
+                    <li><a class="nav-link" href="#">MASTER SETTINGS</a></li>
+                    <li><a class="nav-link" href="#">MEMBER FORM FIELD SETTINGS</a></li>
+                    <li><a class="nav-link" href="#">APP SUPPORT PAGE</a></li>
+                    <li><a class="nav-link" href="#">GOLD RATE CALENDAR</a></li>
+                    <li><a class="nav-link" href="#">EVENT / HOLIDAY CALENDAR</a></li>
+                    <li><a class="nav-link" href="#">DELETED ENTRY LOGS</a></li>
+                    <li><a class="nav-link" href="#">LOGIN HISTORY</a></li>
+                    <li><a class="nav-link" href="#">MAIL SETTING</a></li>                    
+                </ul>
+            </li>
+            
+            <li class="nav-item has-submenu">
+                <a class="nav-link dropdown-toggle" href="#">COMPANY WEBSITE</a>
+                <ul class="submenu collapse">
+                    <li><a class="nav-link" href="#">SETTINGS</a></li>
+                    <li><a class="nav-link" href="#">META TAGS</a></li>
+                    <li><a class="nav-link" href="#">INQUIRIES</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <script src="./script.js"></script>
+            
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
