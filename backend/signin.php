@@ -1,9 +1,6 @@
 <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "bnl_promoter";
+include(config.php);
 
 $conn = mysqli_connect($server ,$username,$password,$database);
 
@@ -19,10 +16,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$count = mysqli_num_rows($result);
 	
 		if($count == 1) {	 
-		 header("location: index.html");
+		 echo "Succesful Login";
 		}
 		else {
-         echo "Invalid Login Credentials";
+         echo "<h2>Invalid Login Credentials</h2>";
+		 echo "<h3>Redirecting to Login in 3 Seconds</h3>";
+		 header('refresh: 3; url=Login.html');
       }
 }
 	  

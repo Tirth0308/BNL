@@ -20,6 +20,6 @@ if(mysqli_query($conn,$sql)==true){
 	header('refresh: 5; url=Login.html');
 }else
 {
-	echo "Data insertion failed";
+	echo "<h2>Data insertion failed</h2>";
 }
 ?>
