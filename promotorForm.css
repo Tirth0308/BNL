@@ -2,9 +2,13 @@
     color: red;
 }
 
+.row{
+    column-gap: 100px;
+    justify-content: center;
+}
+
 .form-group{
-    margin-top: 2rem;
-    margin-left: 10px;
+    margin-top: 2rem;    
 }
 
 /* toggle in label designing */
@@ -15,16 +19,15 @@
     height : 30px;
     background-color: red;
     border-radius: 30px;
-    border: 2px solid rgb(225, 31, 31);
 }
     
 /* After slide changes */
 .toggle:after {
     content: '';
     position: absolute;
-    width: 35px;
+    width: 37px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 30px;
     background-color: rgb(12, 31, 235);
     top: 0px;
     left: 0px;
@@ -33,7 +36,7 @@
     
 /* Checkbox checked effect */
 .checkbox:checked + .toggle::after {
-    left : 49px;
+    left : 53px;
 }
     
 /* Checkbox checked toggle label bg color */
@@ -44,4 +47,12 @@
 /* Checkbox vanished */
 .checkbox {
     display : none;
+}
+
+.pull-right{
+    float: right;
+}
+
+.pull-left{
+    float: left;
 }

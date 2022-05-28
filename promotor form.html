@@ -15,19 +15,27 @@
     <form>
         <div class="row">
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     BRANCH
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Select Branch" required>
+                <!-- <input type="text" class="form-control" placeholder="Select Branch" id="branch" required> -->
+                <select class="branch-select" id="branch">
+                    <option selected>Select Branch</option>
+                    <option value="1">abc</option>
+                    <option value="2">abc</option>
+                    <option value="3">abc</option>
+                    <option value="4">abc</option>
+                    <option value="5">abc</option>
+                    <option value="6">abc</option>
+                </select>
             </div>
-            <!-- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
-            <div class="form-group col-md-6">
-                <label class="col-sm-5">
+            <div class="form-group col-md-5">
+                <label class="col-sm-6">
                     Enrollment Date
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY">
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" id="enrollDate" required>
             </div>
         </div>
 
@@ -37,106 +45,102 @@
 
         <div class="row">
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     TITLE
                     <span class="red-star">*</span>
                 </label>
-                <div class="form-check form-check-inline col-sm-1">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Md.</label>
-                </div>
-                <div class="form-check form-check-inline col-sm-1">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Mr.</label>
-                </div>
-                <div class="form-check form-check-inline col-sm-1">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                    <label class="form-check-label" for="inlineRadio3">Ms.</label>
-                </div>
-                <div class="form-check form-check-inline col-sm-1">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                    <label class="form-check-label" for="inlineRadio3">Mrs.</label>
-                </div>
-            </div>
-            <div class="form-group col-md-6">
                 <label class="col-sm-5">
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="title1" value="option1">
+                        <label class="form-check-label" for="title1">Md.</label>
+                    </div>
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="title2" value="option2">
+                        <label class="form-check-label" for="title2">Mr.</label>
+                    </div>
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="title3" value="option3">
+                        <label class="form-check-label" for="title3">Ms.</label>
+                    </div>
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="title4" value="option4">
+                        <label class="form-check-label" for="title4">Mrs.</label>
+                    </div>
+                </label>
+            </div>
+            <div class="form-group col-md-5">
+                <label class="col-sm-6">
                     GENDER
                     <span class="red-star">*</span>
                 </label>
-                <div class="form-check form-check-inline col-sm-2">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Male</label>
-                </div>
-                <div class="form-check form-check-inline col-sm-2">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                        value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Female</label>
-                </div>
-                <div class="form-check form-check-inline col-sm-2">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                        value="option3">
-                    <label class="form-check-label" for="inlineRadio3">Other</label>
-                </div>
+                <label class="col-sm-5">
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="gender1" value="option1">
+                        <label class="form-check-label" for="gender1">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="gender2" value="option2">
+                        <label class="form-check-label" for="gender2">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline col-xs-2">
+                        <input class="form-check-input" type="radio" id="gender3" value="option3">
+                        <label class="form-check-label" for="gender3">Other</label>
+                    </div>
+                </label>
             </div>
 
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     FIRST NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter First Name" required>
+                <input type="text" class="form-control" placeholder="Enter First Name" id="promFirstName" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     MIDDLE NAME
-                    <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Middle Name">
+                <input type="text" class="form-control" placeholder="Enter Middle Name" id="promMiddleName">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     LAST NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Last Name">
+                <input type="text" class="form-control" placeholder="Enter Last Name" id="promLastName" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     DATE OF BIRTH
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY">
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" id="promDob" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     OCCUPATION
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Occupation" required>
+                <input type="text" class="form-control" placeholder="Enter Occupation" id="promOccupation" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     FATHER'S NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Father Name">
+                <input type="text" class="form-control" placeholder="Enter Father Name" id="promFatherName" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     MOTHER'S NAME
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Mother Name">
+                <input type="text" class="form-control" placeholder="Enter Mother Name" id="promMotherName">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     MARITAL STATUS
                 </label>
-                <select class="marital-status-select" id="maritalstatus">
+                <select class="marital-status-select" id="promMaritalStatus">
                     <option selected>Select Marital Status</option>
                     <option value="1">Married</option>
                     <option value="2">Separated</option>
@@ -147,24 +151,24 @@
                 </select>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     SPOUSE NAME
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Spouse Name">
+                <input type="text" class="form-control" placeholder="Enter Spouse Name" id="promSpouseName">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     EMAIL
                 </label>
-                <input type="email" class="form-control" id="memberemail" placeholder="Enter Member Email">
+                <input type="email" class="form-control" id="memberemail" placeholder="Enter Member Email"
+                    id="promMemberEmail">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
-                    MOBILE NO.
+                <label class="col-sm-6">
+                    MOBILE NO. (+91)
                 </label>
-                <div class="input-group-addon">+91</div>
-                <input type="tel" id="phone" name="phone" class="form-control" pattern="[7-9]{2}-[0-9]{4}-[0-9]{4}"
-                    placeholder="Enter Mobile No." required>
+                <input type="tel" name="phone" class="form-control" pattern="[7-9]{2}-[0-9]{4}-[0-9]{4}"
+                    placeholder="Enter Mobile No." maxlength="10" size="10" id="promPhone">
             </div>
         </div>
 
@@ -174,54 +178,55 @@
 
         <div class="row">
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     AADHAAR NO.
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" id="aadhaar" class="form-control" pattern="[0-9]{12}" placeholder="Enter Aadhaar No."
-                    required>
+                <input type="text" class="form-control" pattern="[0-9]{12}" placeholder="Enter Aadhaar No."
+                    maxlength="12" size="12" id="promAadhaar" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     VOTER ID NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Voter ID No.">
+                <input type="text" class="form-control" placeholder="Enter Voter ID No." id="promVoter">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     PAN NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Pan No." maxlength="10">
+                <input type="text" class="form-control" placeholder="Enter Pan No." maxlength="10" size="10"
+                    id="promPan">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     RATION CARD NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Ration Card No.">
+                <input type="text" class="form-control" placeholder="Enter Ration Card No." id="promRation">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     METER NO.
                 </label>
-                <input type="text" style="width: 47rem;" class="form-control" placeholder="Enter Meter No.">
+                <input type="text" class="form-control" placeholder="Enter Meter No." id="meter">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     CL NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter CL No.">
+                <input type="text" class="form-control" placeholder="Enter CL No." id="clNo">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     CL RELATION
                 </label>
-                <input type="text" class="form-control" placeholder="Enter CL Relation">
+                <input type="text" class="form-control" placeholder="Enter CL Relation" id="clRelation">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     DL NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enetr DL No." required>
+                <input type="text" class="form-control" placeholder="Enetr DL No." id="dl">
             </div>
         </div>
 
@@ -231,14 +236,14 @@
 
         <div class="row">
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Nominee Name" required>
+                <input type="text" class="form-control" placeholder="Enter Nominee Name" id="nomineeName" required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE RELATION
                     <span class="red-star">*</span>
                 </label>
@@ -252,37 +257,40 @@
                 </select>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE MOBILE NO.
                     <span class="red-star">*</span>
                 </label>
-                <input type="tel" id="nomineephone" name="nomineephone" class="form-control"
-                    pattern="[7-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="Enter Nominee Mobile No.">
+                <input type="tel" name="nomineephone" class="form-control" minlength="10" maxlength="10" size="10"
+                    pattern="[7-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="Enter Nominee Mobile No." id="nomineephone"
+                    required>
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE AADHAAR NO.
                 </label>
-                <input type="text" id="nomineeaadhaar" pattern="[0-9]{12}" class="form-control"
-                    placeholder="Enter Nominee Aadhaar No.">
+                <input type="text" pattern="[0-9]{12}" class="form-control" maxlength="12" size="12"
+                    placeholder="Enter Nominee Aadhaar No." id="nomineeAadhaar">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE VOTER ID NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Nominee Voter ID No.">
+                <input type="text" class="form-control" placeholder="Enter Nominee Voter ID No." id="nomineeVoter">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE PAN NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Nominee Pan No." maxlength="10">
+                <input type="text" class="form-control" placeholder="Enter Nominee Pan No." maxlength="10" size="10"
+                    id="nomineePan">
             </div>
             <div class="form-group col-md-5">
-                <label class="col-sm-5">
+                <label class="col-sm-6">
                     NOMINEE ADDRESS
                 </label>
-                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"></textarea>
+                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"
+                    id="nomineeAddress"></textarea>
             </div>
         </div>
 
@@ -306,6 +314,22 @@
             <button type="submit" class="btn btn-success">ADD PROMOTER</button>
             <a class="btn btn-danger" href="./addPromoter.html">CANCEL</a>
             <button class="btn btn-warning" type="reset">RESET</button>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <footer class="main-footer" style="align-items: center;">
+                <div class="pull-right">
+                    Powered By
+                    <b class="text-blue"> Hubco.in ®</b>
+                    - <strong>v4.0 (secured)</strong>
+                </div>
+                <div class="pull-left">
+                    <strong>Copyright © 2018 - 22.</strong>
+                    All rights reserved.
+                </div>
+            </footer>
         </div>
 
     </form>
