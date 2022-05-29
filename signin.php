@@ -19,7 +19,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$count = mysqli_num_rows($result);
 	
 		if($count == 1) {	 
-		 header("location: index.html");
+		 echo "<h1>Logged In Successfully<h1>";
+		 echo "<h3>Redirecting to Home in 3 Seconds<h3>";
+	header('refresh: 3; url=first.html');
 		}
 		else {
          echo "Invalid Login Credentials";
