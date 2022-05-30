@@ -1,5 +1,6 @@
+/* prom_add_php.php */
 <?php
-
+//error_reporting(0);
 $server = "localhost";
 $username = "root";
 $password = "";
@@ -36,10 +37,9 @@ $nomineeAadhaar = $_POST['nomineeAadhaar'];
 $nomineeVoter = $_POST['nomineeVoter'];
 $nomineePan = $_POST['nomineePan'];
 $nomineeAddress = $_POST['nomineeAddress'];
-$switch = $_POST['switch'];
+//$switch = $_POST['switch'];
 
-$sql = "INSERT INTO prom_details(branch,en_data,f_name,m_name,l_name,dob,occ,fath_name,moth_name,m_status,sp_name,email,mob,uid,vid,pan,ra_no,me_no,cl_no,cl_rel,dl_no,nom_name,nom_rel,nom_mob,nom_uid,nom_vid,nom_pan,nom_add,sms)                
-     VALUES('$branch','$enrolldate','$promFirstName','$promMiddleName','$promLastName','$promDob','$promOccupation','$promFatherName','$promMotherName','$promMaritalStatus','$promSpouseName','$memberemail','$promPhone', '$promAdhar','$promVoter','$promPan','$promRation','$meter','$clNo','clRelation','$dl','$nomineeName','$nomineerelation','$nomineephone','$nomineeAadhaar','$nomineeVoter','$nomineePan','$nomineeAddress','$switch')";
+$sql = "INSERT INTO prom_details(branch,en_date,f_name,m_name,l_name,dob,occ,fath_name,moth_name,m_status,sp_name,email,mob,uid,vid,pan,ra_no,me_no,cl_no,cl_rel,dl_no,nom_name,nom_rel,nom_mob,nom_uid,nom_vid,nom_pan,nom_add) VALUES('$branch','$enrolldate','$promFirstName','$promMiddleName','$promLastName','$promDob','$promOccupation','$promFatherName','$promMotherName','$promMaritalStatus','$promSpouseName','$memberemail','$promPhone', '$promAadhaar','$promVoter','$promPan','$promRation','$meter','$clNo','$clRelation','$dl','$nomineeName','$nomineerelation','$nomineephone','$nomineeAadhaar','$nomineeVoter','$nomineePan','$nomineeAddress')";
 
 if(mysqli_query($conn,$sql)==true){
 	echo "<h2>Data inserted Successfully<h2>";

@@ -1,4 +1,4 @@
-
+/* register.php */
 <?php
 
 $server = "localhost";

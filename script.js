@@ -1,3 +1,4 @@
+/* script.js */
 document.addEventListener("DOMContentLoaded", function(){
     document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
       

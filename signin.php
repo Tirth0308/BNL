@@ -1,3 +1,4 @@
+/* signin.php */
 <?php
 
 $server = "localhost";
