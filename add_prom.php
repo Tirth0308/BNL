@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <form action = "prom_add_php.php">
+    <form action = "prom_add_php.php" method="post">
         <div class="row">
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
@@ -20,7 +20,7 @@
                     <span class="red-star">*</span>
                 </label>
                 <!-- <input type="text" class="form-control" placeholder="Select Branch" id="branch" required> -->
-                <select class="branch-select" id="branch">
+                <select class="branch-select" name="branch">
                     <option selected>Select Branch</option>
                     <option value="1">abc</option>
                     <option value="2">abc</option>
@@ -35,7 +35,7 @@
                     Enrollment Date
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY" id="enrollDate" required>
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="enrollDate" required>
             </div>
         </div>
 
@@ -44,31 +44,31 @@
         <h2 style="text-align:center;">PROMTER'S INFO</h2>
 
         <div class="row">
-            <div class="form-group col-md-5">
-                <label class="col-sm-6" id = "title">
+          <!--   <div class="form-group col-md-5">
+               <label class="col-sm-6" name= "title">
                     TITLE
                     <span class="red-star">*</span>
                 </label>
                 <label class="col-sm-5">
                     <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="title1" value="option1">
+                        <input class="form-check-input" type="radio"  value="option1">
                         <label class="form-check-label" for="title1">Md.</label>
                     </div>
                     <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="title2" value="option2">
+                        <input class="form-check-input" type="radio"  value="option2">
                         <label class="form-check-label" for="title2">Mr.</label>
                     </div>
                     <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="title3" value="option3">
+                        <input class="form-check-input" type="radio"  value="option3">
                         <label class="form-check-label" for="title3">Ms.</label>
                     </div>
                     <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="title4" value="option4">
+                        <input class="form-check-input" type="radio"  value="option4">
                         <label class="form-check-label" for="title4">Mrs.</label>
                     </div>
-                </label>
-            </div>
-            <!--<div class="form-group col-md-5">
+                </label> 
+            </div>-->
+            <!-- <div class="form-group col-md-5">
                <label class="col-sm-6">
                     GENDER
                     <span class="red-star">*</span>
@@ -94,81 +94,81 @@
                     FIRST NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter First Name" id="promFirstName" required>
+                <input type="text" class="form-control" placeholder="Enter First Name" name="promFirstName" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     MIDDLE NAME
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Middle Name" id="promMiddleName">
+                <input type="text" class="form-control" placeholder="Enter Middle Name" name="promMiddleName">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     LAST NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Last Name" id="promLastName" required>
+                <input type="text" class="form-control" placeholder="Enter Last Name" name="promLastName" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     DATE OF BIRTH
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY" id="promDob" required>
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="promDob" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     OCCUPATION
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Occupation" id="promOccupation" required>
+                <input type="text" class="form-control" placeholder="Enter Occupation" name="promOccupation" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     FATHER'S NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Father Name" id="promFatherName" required>
+                <input type="text" class="form-control" placeholder="Enter Father Name" name="promFatherName" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     MOTHER'S NAME
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Mother Name" id="promMotherName">
+                <input type="text" class="form-control" placeholder="Enter Mother Name" name="promMotherName">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     MARITAL STATUS
                 </label>
-                <select class="marital-status-select" id="promMaritalStatus">
+                <select class="marital-status-select" name="promMaritalStatus">
                     <option selected>Select Marital Status</option>
-                    <option value="1">Married</option>
-                    <option value="2">Separated</option>
-                    <option value="3">Divorced</option>
-                    <option value="4">Widowed</option>
-                    <option value="5">Unmarried</option>
-                    <option value="6">Untagged</option>
+                    <option value="Unmarried">Married</option>
+                    <option value="Separated">Separated</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="Unmarried">Unmarried</option>
+                    <option value="Untagged">Untagged</option>
                 </select>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     SPOUSE NAME
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Spouse Name" id="promSpouseName">
+                <input type="text" class="form-control" placeholder="Enter Spouse Name" name="promSpouseName">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     EMAIL
                 </label>
-                <input type="email" class="form-control" id="memberemail" placeholder="Enter Member Email"
-                    id="promMemberEmail">
+                <input type="email" class="form-control" name="memberemail" placeholder="Enter Member Email"
+                    name="promMemberEmail">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     MOBILE NO. (+91)
                 </label>
-                <input type="tel" name="phone" class="form-control"
-                    placeholder="Enter Mobile No." maxlength="15" size="15" id="promPhone">
+                <input type="tel"  class="form-control"
+                    placeholder="Enter Mobile No." maxlength="15" size="15" name="promPhone">
             </div>
      </div>
 
@@ -182,51 +182,51 @@
                     AADHAAR NO.
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" pattern="[0-9]{12}" placeholder="Enter Aadhaar No."
-                    maxlength="12" size="12" id="promAadhaar" required>
+                <input type="text" class="form-control" pattern="[0-9]{12}" name="promAadhaar" placeholder="Enter Aadhaar No."
+                    maxlength="12" size="12"  required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     VOTER ID NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Voter ID No." id="promVoter">
+                <input type="text" class="form-control"  name="promVoter"placeholder="Enter Voter ID No." >
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     PAN NO.
                 </label>
                 <input type="text" class="form-control" placeholder="Enter Pan No." maxlength="10" size="10"
-                    id="promPan">
+                    name="promPan">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     RATION CARD NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Ration Card No." id="promRation">
+                <input type="text" class="form-control" placeholder="Enter Ration Card No." name="promRation">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     METER NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Meter No." id="meter">
+                <input type="text" class="form-control" placeholder="Enter Meter No." name="meter">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     CL NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter CL No." id="clNo">
+                <input type="text" class="form-control" placeholder="Enter CL No." name="clNo">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     CL RELATION
                 </label>
-                <input type="text" class="form-control" placeholder="Enter CL Relation" id="clRelation">
+                <input type="text" class="form-control" placeholder="Enter CL Relation" name="clRelation">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     DL NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enetr DL No." id="dl">
+                <input type="text" class="form-control" placeholder="Enetr DL No." name="dl">
             </div>
         </div>
 
@@ -240,20 +240,20 @@
                     NOMINEE NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Nominee Name" id="nomineeName" required>
+                <input type="text" class="form-control" placeholder="Enter Nominee Name" name="nomineeName" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     NOMINEE RELATION
                     <span class="red-star">*</span>
                 </label>
-                <select class="nominee-relation" id="nomineerelation">
+                <select class="nominee-relation" name="nomineerelation">
                     <option selected>Select Relation</option>
-                    <option value="1">Father</option>
-                    <option value="2">Mother</option>
-                    <option value="3">Son</option>
-                    <option value="4">Daughter</option>
-                    <option value="5">Spouse(Husband/Wife)</option>
+                    <option value="Father">Father</option>
+                    <option value="Mother">Mother</option>
+                    <option value="Son">Son</option>
+                    <option value="Daughter">Daughter</option>
+                    <option value="Spuse">Spouse(Husband/Wife)</option>
                 </select>
             </div>
             <div class="form-group col-md-5">
@@ -261,8 +261,8 @@
                     NOMINEE MOBILE NO.
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" name="nomineephone" class="form-control" minlength="10" maxlength="10" size="10"
-                    pattern = "[0-9]{10}" placeholder="Enter Nominee Mobile No." id="nomineephone"
+                <input type="tel" name="nomineephone" class="form-control" minlength="10" maxlength="10" size="10"
+                    pattern="[7-9]{2}-[0-9]{3}-[0-9]{3}" placeholder="Enter Nominee Mobile No." name="nomineephone"
                     >
             </div>
             <div class="form-group col-md-5">
@@ -270,27 +270,26 @@
                     NOMINEE AADHAAR NO.
                 </label>
                 <input type="text" pattern="[0-9]{12}" class="form-control" maxlength="12" size="12"
-                    placeholder="Enter Nominee Aadhaar No." id="nomineeAadhaar">
+                    placeholder="Enter Nominee Aadhaar No." name="nomineeAadhaar">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     NOMINEE VOTER ID NO.
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Nominee Voter ID No." id="nomineeVoter">
+                <input type="text" class="form-control" placeholder="Enter Nominee Voter ID No." name="nomineeVoter">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     NOMINEE PAN NO.
                 </label>
                 <input type="text" class="form-control" placeholder="Enter Nominee Pan No." maxlength="10" size="10"
-                    id="nomineePan">
+                    name="nomineePan">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     NOMINEE ADDRESS
                 </label>
-                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"
-                    id="nomineeAddress"></textarea>
+                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"  name="nomineeAddress"></textarea>
             </div>
         </div>
 
@@ -301,7 +300,7 @@
         <div class="row" style="text-align:center;">
             <div class="form-group">
                 <b>SMS &nbsp &nbsp</b>
-                <input type="checkbox" id="switch" class="checkbox">
+                <input type="checkbox" name="switch" class="checkbox">
                 <label for="switch" class="toggle">
                     <p>OFF &nbsp &nbsp ON</p>
                 </label>
