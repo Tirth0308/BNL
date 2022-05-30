@@ -1,6 +1,6 @@
 /* prom_add_php.php */
 <?php
-//error_reporting(0);
+error_reporting(0);
 $server = "localhost";
 $username = "root";
 $password = "";
