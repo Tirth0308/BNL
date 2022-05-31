@@ -29,7 +29,7 @@ $result = mysqli_query($conn,"SELECT id,f_name,l_name,email,dob FROM prom_detail
 		?>
 		<tr>
 			<td scope = "row"><?php echo $row['id'];?></td>
-			<td scope = "row"><a href = "#"><?php echo $row['f_name'];?></a></td>
+			<td scope = "row"><b><a style = "text-decoration : none" href = "promoter_details.html"><?php echo $row['f_name'];?></a></b></td>
 			<td scope = "row"><?php echo $row['l_name'];?></td>
 			<td scope = "row"><?php echo $row['email'];?></td>
 			<td scope = "row"><?php echo $row['dob'];?></td>
