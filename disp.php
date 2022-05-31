@@ -1,8 +1,8 @@
 <?php
 //error_reporting(0);
 include('config.php');
-/* $query = "SELECT * FROM promoter"; */
-$result = mysqli_query($conn,"SELECT * FROM promoter");
+/* $query = "SELECT id,f_name,l_name,email,dob FROM prom_details"; */
+$result = mysqli_query($conn,"SELECT id,f_name,l_name,email,dob FROM prom_details");
 ?>
 <html>
 <head>
@@ -13,10 +13,12 @@ $result = mysqli_query($conn,"SELECT * FROM promoter");
 	<table align = "center" border = "2px" style = "width:600px; line-height : 40px;">
 		<tr>
 			<t>
-				<th>id</th>
-				<th>name</th>
-				<th>email</th>
-				<th>password</th>
+				<th>Id</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>DOB</th>
+				<th>Remove User</th>
 			</t>
 		</tr>
 		
@@ -26,9 +28,11 @@ $result = mysqli_query($conn,"SELECT * FROM promoter");
 		?>
 		<tr>
 			<td><?php echo $row['id'];?></td>
-			<td><?php echo $row['name'];?></td>
+			<td><a href = "#"><?php echo $row['f_name'];?></a></td>
+			<td><?php echo $row['l_name'];?></td>
 			<td><?php echo $row['email'];?></td>
-			<td><?php echo $row['password'];?></td>
+			<td><?php echo $row['dob'];?></td>
+			<td align = "center"><a href="#" >Remove</a></td>
 		</tr>
 		<?php
 			}
