@@ -1,10 +1,4 @@
 <!-- prom_list.html -->
-<?php
-error_reporting(0);
-include('config.php');
-/* $query = "SELECT * FROM promoter"; */
-$result = mysqli_query($conn,"SELECT * FROM promoter");
-?>
 
 <html lang="en">
 <head>
@@ -28,30 +22,7 @@ $result = mysqli_query($conn,"SELECT * FROM promoter");
         
 		<h1 style="text-align: center;" >Promoters <small><a class="btn btn-danger" href="add_prom.html">+</a></small></h1>
     </section>
-
-	<table align = "center" border = "2px" style = "width:600px; line-height : 40px;">
-		<tr>
-			<t>
-				<th>id</th>
-				<th>name</th>
-				<th>email</th>
-				<th>password</th>
-			</t>
-		</tr>
-		
-		<?php 
-			while($row=mysqli_fetch_assoc($result))
-			{
-		?>
-		<tr>
-			<td><?php echo $row['id'];?></td>
-			<td><?php echo $row['name'];?></td>
-			<td><?php echo $row['email'];?></td>
-			<td><?php echo $row['password'];?></td>
-		</tr>
-		<?php
-			}
-		?>
-	</table>
+	
+	<a href = "disp.php" align = "center"><h3>View Promoters</h3></a>
 </body>
 </html>
