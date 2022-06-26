@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <form action = "prom_add_php.php" method="post">
+    <form action="prom_add_php.php" method="post">
         <div class="row">
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     BRANCH
                     <span class="red-star">*</span>
                 </label>
-                <!-- <input type="text" class="form-control" placeholder="Select Branch" id="branch" required> -->
+
                 <select class="dropdown" name="branch">
                     <option selected>Select Branch</option>
                     <option value="Lalpur">Lalpur</option>
@@ -45,51 +45,6 @@
         <h2 style="text-align:center;">PROMTER'S INFO</h2>
 
         <div class="row">
-          <!--   <div class="form-group col-md-5">
-               <label class="col-sm-6" name= "title">
-                    TITLE
-                    <span class="red-star">*</span>
-                </label>
-                <label class="col-sm-5">
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio"  value="option1">
-                        <label class="form-check-label" for="title1">Md.</label>
-                    </div>
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio"  value="option2">
-                        <label class="form-check-label" for="title2">Mr.</label>
-                    </div>
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio"  value="option3">
-                        <label class="form-check-label" for="title3">Ms.</label>
-                    </div>
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio"  value="option4">
-                        <label class="form-check-label" for="title4">Mrs.</label>
-                    </div>
-                </label> 
-            </div>-->
-            <!-- <div class="form-group col-md-5">
-               <label class="col-sm-6">
-                    GENDER
-                    <span class="red-star">*</span>
-                </label>
-                <label class="col-sm-5">
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="gender1" value="option1">
-                        <label class="form-check-label" for="gender1">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="gender2" value="option2">
-                        <label class="form-check-label" for="gender2">Female</label>
-                    </div>
-                    <div class="form-check form-check-inline col-xs-2">
-                        <input class="form-check-input" type="radio" id="gender3" value="option3">
-                        <label class="form-check-label" for="gender3">Other</label>
-                    </div>
-                </label>
-            </div> -->
-
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     FIRST NAME
@@ -168,10 +123,10 @@
                 <label class="col-sm-6">
                     MOBILE NO. (+91)
                 </label>
-                <input type="tel"  class="form-control"
-                    placeholder="Enter Mobile No." maxlength="10" size="10" name="promPhone">
+                <input type="tel" class="form-control" placeholder="Enter Mobile No." maxlength="10" size="10"
+                    name="promPhone">
             </div>
-     </div>
+        </div>
 
         <hr>
 
@@ -183,14 +138,14 @@
                     AADHAAR NO.
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" pattern="[0-9]{12}" name="promAadhaar" placeholder="Enter Aadhaar No."
-                    maxlength="12" size="12"  required>
+                <input type="text" class="form-control" pattern="[0-9]{12}" name="promAadhaar"
+                    placeholder="Enter Aadhaar No." maxlength="12" size="12" required>
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     VOTER ID NO.
                 </label>
-                <input type="text" class="form-control"  name="promVoter"placeholder="Enter Voter ID No." >
+                <input type="text" class="form-control" name="promVoter" placeholder="Enter Voter ID No.">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
@@ -263,8 +218,7 @@
                     <span class="red-star">*</span>
                 </label>
                 <input type="tel" name="nomineephone" class="form-control" minlength="10" maxlength="10" size="10"
-                    placeholder="Enter Nominee Mobile No." name="nomineephone"
-                    >
+                    placeholder="Enter Nominee Mobile No." name="nomineephone">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
@@ -290,7 +244,8 @@
                 <label class="col-sm-6">
                     NOMINEE ADDRESS
                 </label>
-                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"  name="nomineeAddress"></textarea>
+                <textarea style="margin-top: 5px;" class="form-control" placeholder="Enter Nominee Address"
+                    name="nomineeAddress"></textarea>
             </div>
         </div>
 
@@ -298,7 +253,7 @@
 
         <h2 style="text-align: center;">EXTRA SETTINGS</h2>
 
-        <!-- <div class="row" style="text-align:center;">
+        <div class="row" style="text-align:center;">
             <div class="form-group">
                 <b>SMS &nbsp &nbsp</b>
                 <input type="checkbox" name="switch" class="checkbox">
@@ -306,7 +261,7 @@
                     <p>OFF &nbsp &nbsp ON</p>
                 </label>
             </div>
-        </div>  -->
+        </div>
 
         <br> <br>
 
@@ -337,4 +292,5 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
 </body>
+
 </html>
