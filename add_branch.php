@@ -3,7 +3,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "bnl_promoter";
+$database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
 
@@ -21,7 +21,7 @@ $bm = $_POST['bm'];
 $bac = $_POST['bac'];
 
 
-$sql = "INSERT INTO branch( bcode, bname, bloc, bsize, barea, bcity, bstate, bdist, ifsc, bm, bac) VALUES( `$bcode`, `$bname`, `$bloc`, `$bsize`, `$barea`, `$bcity`, `$bstate`, `$bdist`, `$ifsc`, `$bm`, `$bac`)";
+$sql = "INSERT INTO branch( bcode, bname, bloc, bsize, barea, bcity, bstate, bdist, ifsc, bm, bac) VALUES( '$bcode', '$bname', '$bloc', '$bsize', '$barea', '$bcity', '$bstate', '$bdist', '$ifsc', '$bm', '$bac')";
 
 if(mysqli_query($conn,$sql)==true){
 	echo "<h2>Data inserted Successfully<h2>";
