@@ -14,7 +14,7 @@
 <body class="bod">
     &nbsp;
     <form action="customer_add.php" method="post">
-        <div class="card">
+        <!-- <div class="card">
             <h5 class="card-header text-center">Enrollment Details</h5>
             <div class="card-body">
                 <div class="row">
@@ -135,9 +135,9 @@
             </div>
         </div>
 
-        <br>
+        <br> -->
 
- <!--       <div class="card">
+      <div class="card">
             <h5 class="card-header text-center">Customer's KYC</h5>
             <div class="card-body">
                 <div class="row">
@@ -229,7 +229,7 @@
                             <span class="red-star">*</span>
                         </label>
                         <input type="tel" name="nomineephone" class="form-control" minlength="10" maxlength="10" size="10"
-                            placeholder="Enter Nominee Mobile No." name="nomineephone"
+                            placeholder="Enter Nominee Mobile No." 
                             >
                     </div>
                     <div class="form-group col-md-5">
@@ -264,7 +264,7 @@
 
         <br>
 
-        <div class="card text-center">
+    <!--    <div class="card text-center">
             <h5 class="card-header">Extra Settings</h5>
             <div class="card-body">
                 <div class="row" style="text-align:center;">
@@ -277,9 +277,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <br>-->
+        <br>
 
         <div class="form-group" style="text-align: center;">
             <button type="submit" class="btn btn-success">SUBMIT</button>

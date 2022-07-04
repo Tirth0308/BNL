@@ -6,32 +6,56 @@ $password = "";
 $database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
-$title = $_POST['title'];
-$gender = $_POST['gender'];
-$FirstName = $_POST['f_name'];
-$MiddleName = $_POST['m_name'];
-$LastName = $_POST['l_name'];
-$Dob = $_POST['dob'];
-$m_status = $_POST['m_status'];
-$nomName = $_POST['nom_name'];
-$email = $_POST['email'];
-$Phone = $_POST['mob'];
-$uid = $_POST['uid'];
-$pan = $_POST['pan'];
-$pass = $_POST['pass'];
-$cnf_pass = $_POST['cnf_pass']; 
-$doctype = $_POST['doctype'];
-$upload = $_POST['myfile'];
+/*$branch = $_POST['branch'];
+$enrolldate = $_POST['enrollDate'];
+//$title = $_POST['title'];*
+$promFirstName = $_POST['promFirstName'];
+$promMiddleName = $_POST['promMiddleName'];
+$promLastName = $_POST['promLastName'];
+$promDob = $_POST['promDob'];
+$promOccupation = $_POST['promOccupation'];
+$promFatherName = $_POST['promFatherName'];
+$promMotherName = $_POST['promMotherName'];
+$promMaritalStatus = $_POST['promMaritalStatus'];
+$promSpouseName = $_POST['promSpouseName'];
+$memberemail = $_POST['memberemail'];
+$promPhone = $_POST['promPhone'];*/
+$promAdhar = $_POST['promAadhaar'];
 
-$sql = "INSERT INTO bnl_customer(title, gender, f_name, m_name, l_name, dob, m_status, nom_name, email, mob, uid, pass, cnf_pass, pan, doctype, doc_upload)                
-     VALUES('$title','$gender','$FirstName','$MiddleName','$LastName','$Dob','$m_status','$nomName','$email','$Phone','$uid','$pan','$pass','$cnf_pass','$doctype','$upload')";
+$promPan = $_POST['promPan'];
+
+$nomineeName = $_POST['nomineeName'];
+$nomineerelation = $_POST['nomineerelation'];
+$nomineephone = $_POST['nomineephone'];
+$nomineeAadhaar = $_POST['nomineeAadhaar'];
+
+$nomineePan = $_POST['nomineePan'];
+$nomineeAddress = $_POST['nomineeAddress'];
+
+
+
+/*$sql = "INSERT INTO bnl_customer(branch,enr_date,fname,mname,lname,dob,occupation,f_name,m_name,m_status,spname,email,mob)                
+     VALUES('$branch','$enrolldate','$promFirstName','$promMiddleName','$promLastName','$promDob','$promOccupation','$promFatherName','$promMotherName','$promMaritalStatus','$promSpouseName','$memberemail','$promPhone')";*/
+$sql = "INSERT INTO customer_complete(aadhaar,pan,nom_name,nom_rel,nom_mob,nom_aadhaar,nom_pan,nom_add)    VALUES('$promAdhar','$promPan','$nomineeName','$nomineerelation','$nomineephone','$nomineeAadhaar','$nomineePan','$nomineeAddress')";
 
 if(mysqli_query($conn,$sql)==true){
-	echo "<h2>Data inserted Successfully<h2>";
-	echo "<h3>Redirecting to Login in 5 Seconds<h3>";
-	header('refresh: 5; url=Login.html');
+	
+	/*if(mysqli_query($conn,$sql2)==true){
+		echo "<h2>Data inserted Successfully<h2>";
+	    echo "<h3>Redirecting to Login in 5 Seconds<h3>";
+	    header('refresh: 5; url=Login.html');
+	}else{*/
+	echo "<h2>Data inserted </h2>";
+	
 }else
 {
 	echo "<h2>Data insertion failed</h2>";
 }
+
+
 ?>
+
+
+
+<!-- pan,ra_no,me_no,cl_no,cl_rel,dl_no,nom_name,nom_rel,nom_mob,nom_uid,nom_vid,nom_pan,nom_add,sms
+ '$promAdhar','$promPan','$nomineeName','$nomineerelation','$nomineephone','$nomineeAadhaar','$nomineeVoter','$nomineePan','$nomineeAddress','$switch' -->

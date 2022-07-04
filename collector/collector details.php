@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <form action = "coll_register.php">
+    <form action = "coll_register.php" method = "post">
         
 
         <hr>
@@ -147,7 +147,7 @@
                     MOBILE NO. <span class="red-star">*</span>
                 </label>
                 <div class="input-group-addon">+91</div>
-                <input type="tel" id="phone" name="phone" class="form-control" 
+                <input type="tel" id="phone"  class="form-control" 
                     placeholder="Enter Mobile No." name="mob" required>
             </div>
         </div>

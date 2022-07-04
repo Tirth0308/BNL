@@ -15,7 +15,7 @@ $Dob = $_POST['dob'];
 $m_status = $_POST['m_status'];
 $nomName = $_POST['nom_name'];
 $email = $_POST['email'];
-$Phone = $_POST['mob'];
+$phone = $_POST['mob'];
 $uid = $_POST['uid'];
 $pan = $_POST['pan'];
 $pass = $_POST['pass'];
@@ -24,7 +24,7 @@ $doctype = $_POST['doctype'];
 $upload = $_POST['myfile'];
 
 $sql = "INSERT INTO bnl_collector_cred(title, gender, f_name, m_name, l_name, dob, m_status, nom_name, email, mob, uid, pan, pass, cnf_pass, doctype, doc_upload)                
-     VALUES('$title','$gender','$FirstName','$MiddleName','$LastName','$Dob','$m_status','$nomName','$email','$Phone','$uid','$pan','$pass','$cnf_pass','$doctype','$upload')";
+     VALUES('$title','$gender','$FirstName','$MiddleName','$LastName','$Dob','$m_status','$nomName','$email','$phone','$uid','$pan','$pass','$cnf_pass','$doctype','$upload')";
 
 if(mysqli_query($conn,$sql)==true){
 	echo "<h2>Data inserted Successfully<h2>";
