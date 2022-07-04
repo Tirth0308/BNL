@@ -23,13 +23,13 @@ $cnf_pass = $_POST['cnf_pass'];
 $doctype = $_POST['doctype'];
 $upload = $_POST['myfile'];
 
-$sql = "INSERT INTO bnl_customer(title, gender, f_name, m_name, l_name, dob, m_status, nom_name, email, mob, uid, pass, cnf_pass, pan, doctype, doc_upload)                
+$sql = "INSERT INTO bnl_collector_cred(title, gender, f_name, m_name, l_name, dob, m_status, nom_name, email, mob, uid, pan, pass, cnf_pass, doctype, doc_upload)                
      VALUES('$title','$gender','$FirstName','$MiddleName','$LastName','$Dob','$m_status','$nomName','$email','$Phone','$uid','$pan','$pass','$cnf_pass','$doctype','$upload')";
 
 if(mysqli_query($conn,$sql)==true){
 	echo "<h2>Data inserted Successfully<h2>";
 	echo "<h3>Redirecting to Login in 5 Seconds<h3>";
-	header('refresh: 5; url=Login.html');
+	//header('refresh: 5; url=Login.html');
 }else
 {
 	echo "<h2>Data insertion failed</h2>";
