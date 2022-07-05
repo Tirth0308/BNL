@@ -21,9 +21,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 		if($count == 1) {	 
 		 // header("location: index.html");
 			if($typo == "Director")
-				echo "Hello Director";
-			else if($typo == 'Customer')
-				echo "Hello customer";
+			header("location: director_interface.html");
+			else if($typo == "Customer")
+			header("location: customer_interface.html");
+			else if($typo == "Collector")
+			header("location: collector_interface.html");
+			else if($typo == "Promoter")
+			header("location: promoter_interface.html");	
 			else
 				echo "good night";
 		}
