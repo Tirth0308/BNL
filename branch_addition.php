@@ -11,7 +11,7 @@
 </head>
 <body class="bod">
     &nbsp; &nbsp;
-    <form action = "add_branch.php">
+    <form action = "add_branch.php" method = "post">
         <div class="card">
             <h5 class="card-header text-center">Branch Details</h5>
             <div class="card-body">
