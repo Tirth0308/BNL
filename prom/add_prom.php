@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="prom_add_php.php" method="post">
+    <form action="hello.php" method="post">
         <div class="row">
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
@@ -36,7 +36,7 @@
                     Enrollment Date
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="enrollDate" required>
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="enrollDate" >
             </div>
         </div>
 
@@ -50,28 +50,28 @@
                     Promoter ID
                     <span class="red-star">*</span>
                 </label>
-                <input type="number" class="form-control" placeholder="Enter First Name" name="p_id" required>
+                <input type="number" class="form-control" placeholder="Enter First Name" name="p_id" >
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     FULL NAME
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter First Name" name="promFirstName" required>
+                <input type="text" class="form-control" placeholder="Enter Name" name="fullName" >
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     DATE OF BIRTH
                     <span class="red-star">*</span>
                 </label>
-                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="promDob" required>
+                <input type="date" class="form-control" placeholder="DD-MM-YYYY" name="promDob" >
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
                     OCCUPATION
                     <span class="red-star">*</span>
                 </label>
-                <input type="text" class="form-control" placeholder="Enter Occupation" name="promOccupation" required>
+                <input type="text" class="form-control" placeholder="Enter Occupation" name="promOccupation" >
             </div>
     
             <div class="form-group col-md-5">
@@ -95,8 +95,7 @@
                 <label class="col-sm-6">
                     EMAIL
                 </label>
-                <input type="email" class="form-control" name="memberemail" placeholder="Enter Member Email"
-                    name="promMemberEmail">
+                <input type="email" class="form-control" name="memberemail" placeholder="Enter Member Email">
             </div>
             <div class="form-group col-md-5">
                 <label class="col-sm-6">
@@ -112,7 +111,7 @@
 
         <div class="form-group" style="text-align: center;">
             <button type="submit" class="btn btn-success">ADD PROMOTER</button>
-            <a class="btn btn-danger" href="./addPromoter.html">CANCEL</a>
+            <a class="btn btn-danger" href="./add_prom.php">CANCEL</a>
             <button class="btn btn-warning" type="reset">RESET</button>
         </div>
 
