@@ -17,13 +17,14 @@ body{
 }
 
 .container{
+	margin-top: 110px;
 	position: relative;
 	max-width: 430px;
 	width: 100%;
 	background: #fff;
 	border-radius: 10px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .container .forms{
@@ -98,6 +99,18 @@ body{
 	border-top: 2px solid transparet;
 }
 
+.input-field select{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 0 35px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid transparet;
+}
+
 .input-field input:is(:focus, :valid){
 	border-bottom-color: #4070f4;
 }
@@ -143,6 +156,8 @@ body{
 }
 
 .form .radio-text{
+	height: 50px;
+	color: #333;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -194,6 +209,6 @@ body{
 }
 
 .form .login-signup{
-	margin-top: 30px;
+	margin-top: 0px;
 	text-align: center;
 }

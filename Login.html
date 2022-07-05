@@ -21,6 +21,18 @@
 			<div class="form login">
 				<span class="title"> Login </span>
 				<form action="signin.php" method="post">
+
+					<div class="input-field">
+						<select name="Account" style="color: grey;">
+                            <option selected>Select member type</option>
+                            <option value="Director">Director</option>
+                            <option value="Promoter">Promoter</option>
+                            <option value="Collector">Collector</option>
+                            <option value="Customer">Customer</option>
+                        </select>
+						<i class="uil uil-key-skeleton"></i>
+					</div>
+
 					<div class="input-field">
 						<input type="text" placeholder="Enter your email" name="email" required>
 						<i class="uil uil-envelope icon"></i>
@@ -61,27 +73,63 @@
 				<span class="title"> Registration </span>
 				<form action="register.php" method="post">
 
+					<div class="input-field">
+						<input type="text" placeholder="Member Id" name="memberId" required>
+						<i class="uil uil-card-atm"></i>
+					</div>
 
 					<div class="input-field">
 						<input type="text" placeholder="Enter your name" name="name" required>
 						<i class="uil uil-user"></i>
 					</div>
 
-					<!-- 	<div class="radio-text">
-						<div class="radio-content">
-							<input type="radio" id="director" name="fav_language" value="HTML">
-							<label for="director">Director</label><br>
-							<input type="radio" id="promoter" name="fav_language" value="CSS">
-							<label for="promoter">Promoter</label><br>
-						</div>
-					</div>      -->
-
+					<div class="input-field">
+						<select name="Account" style="color: grey;">
+                            <option selected>Select member type</option>
+                            <option value="Director">Director</option>
+                            <option value="Promoter">Promoter</option>
+                            <option value="Collector">Collector</option>
+                            <option value="Customer">Customer</option>
+                        </select>
+						<i class="uil uil-key-skeleton"></i>
+					</div>
 
 
 					<div class="input-field">
 						<input type="text" placeholder="Enter your email" name="email" required>
 						<i class="uil uil-envelope icon"></i>
 					</div>
+
+					<!--Option-1 GENDER-->
+					<div class="radio-text">
+						<i class="uil uil-user-circle" style="color: grey; font-size:23px;"></i>
+						<p style="font-size: 16px; color: grey;">Gender</p>
+						<div class="radio-content" style="color: grey;">
+							<input type="radio" id="gender" name="fav_language" value="male">
+							<label for="gender">Male</label><br>
+							&nbsp; &nbsp;
+							<input type="radio" id="gender" name="fav_language" value="female">
+							<label for="gender">Female</label><br>
+						</div>
+					</div>
+					<hr>
+
+					<!-- Option-2 GENDER
+					<div class="input-field">
+						<select name="Gender">
+                            <option selected>Select the gender</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+						<i class="uil uil-user-arrows"></i>
+					</div>
+					-->
+
+					<div class="input-field">
+						<input type="text" placeholder="Enter your phone no." name="phone" required>
+						<i class="uil uil-phone"></i>
+					</div>
+
 					<div class="input-field">
 						<input type="password" class="password" placeholder="Create a password" name="password"
 							required>
