@@ -3,10 +3,11 @@ error_reporting(0);
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "bnl_promoter";
+$database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
-$result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
+$result = mysqli_query($conn,"SELECT cid, full_name, mob FROM customer_basic");
+
 ?>
 <html>
 <head>
@@ -21,11 +22,7 @@ $result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
         </script>
 
 
-    <div class="content-wrapper" style="min-height: 1520px; ">
-        <section class="content-header">
-
-            <h1 style="text-align: center;"> Customers <small><a class="btn btn-danger"
-                        href="customer_registration.php">+</a></small></h1>
+   
 
 	<table align = "center" border = "2px" style = "width:600px; line-height : 40px;" class = "table table-striped">
 		<tr>
@@ -44,9 +41,9 @@ $result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
 		?>
 		<tr>
 			
-			<td scope = "row"><b><a style = "text-decoration : none" href = "customer_registration.php"><?php echo $row['fname'];?></a></b></td>
-			<td scope = "row"><?php echo $row['lname'];?></td>
-			<td scope = "row"><?php echo $row['email'];?></td>
+			<td scope = "row"><b><a style = "text-decoration : none" ><?php echo $row['full_name'];?></a></b></td>
+			<td scope = "row"><?php echo $row['cid'];?></td>
+			<td scope = "row"><?php echo $row['mob'];?></td>
 			
 			
 		</tr>

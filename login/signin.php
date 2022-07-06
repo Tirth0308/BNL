@@ -17,17 +17,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);	
 	$count = mysqli_num_rows($result);
-	
+    $var = "SELECT member_id FROM all_member WHERE email = '$mail' ";
+	$varexec = mysqli_query($conn,$var);
+    $col = mysqli_fetch_array($varexec,MYSQLI_ASSOC);	
+
 		if($count == 1) {	 
 		 // header("location: index.html");
-			if($typo == "Director")
-			header("location: director_interface.html");
-			else if($typo == "Customer")
-			header("location: customer_interface.html");
-			else if($typo == "Collector")
-			header("location: collector_interface.html");
-			else if($typo == "Promoter")
-			header("location: promoter_interface.html");	
+			if($typo == "Director"){
+				echo '<script language = "javascript">';
+                echo 'window.location="http://localhost/bnl/BNL/Director/director_interface.php?member_id=' . $result . '"';
+                echo '</script>';
+			    //header("location: index.html");*
+			}else if($typo == "Customer")
+			{
+				echo '<script language = "javascript">';
+                echo 'window.location="http://localhost/bnl/BNL/Customer/Customer_interface.php?member_id=' . $col['member_id'] .'"';
+                echo '</script>';
+
+			}
 			else
 				echo "good night";
 		}
@@ -37,3 +44,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 	  
 ?>
+//************************************

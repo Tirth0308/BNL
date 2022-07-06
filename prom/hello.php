@@ -25,8 +25,8 @@ $sql = "INSERT INTO promoter_basic(p_id,branch,date,fullname,dob,occupation,m_st
 
 if(mysqli_query($conn,$sql)==true){
 	echo "<h2>Data inserted Successfully<h2>";
-	echo "<h3>Redirecting to Login in 5 Seconds<h3>";
-	header('refresh: 5; url=add_prom.php');
+	echo "<h3>Redirecting to KYC detail in 5 Seconds<h3>";
+	header('refresh: 5; url=prom_kyc.php');
 }else
 {
 	//header('refresh: 1; url=01.php');
