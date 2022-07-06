@@ -7,13 +7,28 @@ $database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
 $set = $_POST['threshold'];
-$sql = "INSERT INTO customer_basic(threshold)  VALUES('$set')";
+$id = $_POST['member_id'];
+
+if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+        $url = "https://";   
+else  
+        $url = "http://";   
+    // Append the host(domain name, ip) to the URL.   
+$url.= $_SERVER['HTTP_HOST'];   
+    
+    // Append the requested resource location to the URL   
+$url.= $_SERVER['REQUEST_URI'];    
+$url_components = parse_url($url);
+parse_str($url_components['query'], $params);
+
+$sql = "UPDATE customer_basic SET threshold = '$set' WHERE member_id = '$params[member_id]' ";
 if(mysqli_query($conn,$sql)==true){
 	echo "Data inserted Successfully";
 }else
 {
-	echo "Data insertion failed";
+	echo "error" . mysqli_error($conn);
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -30,7 +45,7 @@ if(mysqli_query($conn,$sql)==true){
 	<title></title>
 </head>
 <body>
-	<form action="">
+	<form action="" method ="post">
 	<input type="text" name="threshold">
 	<input type ="submit" value = "Submit">
 	</form>

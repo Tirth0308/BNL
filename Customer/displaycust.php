@@ -6,7 +6,7 @@ $password = "";
 $database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
-$result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
+$result = mysqli_query($conn,"SELECT full_name,collec_id,threshold, c_time FROM customer_basic");
 ?>
 <html>
 <head>
@@ -31,9 +31,10 @@ $result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
 		<tr>
 			<t>
 				
-				<th scope = "col">First Name</th>
-				<th scope = "col">Last Name</th>
-				<th scope = "col">Email</th>
+				<th scope = "col">Full Name</th>
+				<th scope = "col">ID</th>
+				<th scope = "col">Timing</th>
+				<th scope = "col">Threshold</th>
 				
 			</t>
 		</tr>
@@ -44,10 +45,10 @@ $result = mysqli_query($conn,"SELECT fname,lname,email FROM bnl_customer");
 		?>
 		<tr>
 			
-			<td scope = "row"><b><a style = "text-decoration : none" href = "customer_registration.php"><?php echo $row['fname'];?></a></b></td>
-			<td scope = "row"><?php echo $row['lname'];?></td>
-			<td scope = "row"><?php echo $row['email'];?></td>
-			
+			<td scope = "row"><b><a style = "text-decoration : none" href = "customer_registration.php"><?php echo $row['full_name'];?></a></b></td>
+			<td scope = "row"><?php echo $row['collec_id'];?></td>
+			<td scope = "row"><?php echo $row['c_time'];?></td>
+			<td scope = "row"><?php echo $row['threshold'];?></td>
 			
 		</tr>
 		<?php

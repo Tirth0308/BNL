@@ -7,30 +7,28 @@ $database = "bnl";
 
 $conn = mysqli_connect($server ,$username,$password,$database);
 $set = $_POST['threshold'];
-$sql = " FROM prom_details WHERE id='" . $_GET["id"] . "'";
+
+
+
 
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-         $url = "https://";   
-    else  
-         $url = "http://";   
+        $url = "https://";   
+else  
+    $url = "http://";   
     // Append the host(domain name, ip) to the URL.   
-    $url.= $_SERVER['HTTP_HOST'];   
+$url.= $_SERVER['HTTP_HOST'];   
     
     // Append the requested resource location to the URL   
-    $url.= $_SERVER['REQUEST_URI'];    
-      
-        $url_components = parse_url($url);
-  
-// Use parse_str() function to parse the
-// string passed via URL
-    parse_str($url_components['query'], $params);
+$url.= $_SERVER['REQUEST_URI'];    
+$url_components = parse_url($url);
+parse_str($url_components['query'], $params);
 
-$sql = "INSERT INTO customer_basic(threshold)  VALUES('$set') WHERE member_id = $params['member_id']";
+$sql = "UPDATE customer_basic SET threshold= $params['member_id']";
 if(mysqli_query($conn,$sql)==true){
 	echo "Data inserted Successfully";
 }else
 {
-	echo "Data insertion failed";
+	echo "error" . mysqli_error($conn);
 }
 
 ?>
@@ -48,7 +46,7 @@ if(mysqli_query($conn,$sql)==true){
 	<title></title>
 </head>
 <body>
-	<form action="">
+	<form action="customer_interface.php">
 	<input type="text" name="threshold">
 	<input type ="submit" value = "Submit">
 	</form>
